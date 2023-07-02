@@ -2,14 +2,27 @@ import React from 'react';
 import {
   Navbar,
   MobileNav,
+  Collapse,
   Typography,
   Button,
   IconButton,
 } from '@material-tailwind/react';
 import Headroom from 'react-headroom';
 import './navbar.style.css';
+import { useDispatch, useSelector } from 'react-redux';
+import Sun from '../../Icons/Sun';
+import Moon from '../../Icons/Moon';
+import { toggleTheme } from '../../features/theme/themeSlice';
 
 const NavbarComponent = () => {
+  const { theme } = useSelector((state) => state.theme);
+  console.log(theme);
+  const dispatch = useDispatch();
+
+  const themeChange = () => {
+    dispatch(toggleTheme(theme === 'dark' ? 'light' : 'dark'));
+  };
+
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -65,29 +78,37 @@ const NavbarComponent = () => {
           Docs
         </a>
       </Typography>
+      <Typography
+        as='li'
+        variant='small'
+        color='blue-gray'
+        className='p-1 font-normal'>
+        <Button onClick={themeChange}>
+          {theme && theme === 'dark' ? (
+            <Sun className='text-3xl' />
+          ) : (
+            <Moon className='text-3xl' />
+          )}
+        </Button>
+      </Typography>
     </ul>
   );
 
   return (
     <Headroom>
-      <Navbar className='sticky top z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'>
+      <Navbar className='sticky top z-10  rounded-none py-2 px-4 lg:px-8 lg:py-4 mx-auto'>
         <div className='flex items-center justify-between text-blue-gray-900'>
           <Typography
             as='a'
             href='#'
             className='mr-4 cursor-pointer py-1.5 font-medium text-xl'>
             <span className='grey-color'> &lt;</span>
-            <span className='logo-name '>Majedul Hasan</span>
+            <span className='logo-name text-gray-700 '>Majedul Hasan</span>
             <span className='grey-color'>/&gt;</span>
           </Typography>
           <div className='flex items-center gap-4'>
             <div className='mr-4 hidden lg:block'>{navList}</div>
-            <Button
-              variant='gradient'
-              size='sm'
-              className='hidden lg:inline-block'>
-              <span>Buy Now</span>
-            </Button>
+
             <IconButton
               variant='text'
               className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'
@@ -124,16 +145,7 @@ const NavbarComponent = () => {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
-          {navList}
-          <Button
-            variant='gradient'
-            size='sm'
-            fullWidth
-            className='mb-2'>
-            <span>Contact Me</span>
-          </Button>
-        </MobileNav>
+        <Collapse open={openNav}>{navList}</Collapse>
       </Navbar>
     </Headroom>
   );
