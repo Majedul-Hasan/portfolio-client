@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Button } from '@material-tailwind/react';
 
 const IntroCard = () => {
   let animateduration = 0.3;
@@ -84,6 +85,13 @@ const IntroCard = () => {
           ))
         }
       </ul>
+      <div>
+        <a
+          href='https://drive.google.com/uc?id=1WBnRC7O9y1f_noT2pvW5fXUvYQCWS2XZ&export=download'
+          className='bg-blue-gray-400 border-2  py-3 px-6 hover:bg-transparent '>
+          download my resume
+        </a>
+      </div>
     </div>
   );
 };
