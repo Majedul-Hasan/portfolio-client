@@ -41,7 +41,7 @@ const NavbarComponent = () => {
         className='p-1 font-normal'>
         <a
           href='#intro'
-          className='flex items-center'>
+          className='flex items-center text-gray-700 dark:text-gray-500 '>
           About
         </a>
       </Typography>
@@ -52,7 +52,7 @@ const NavbarComponent = () => {
         className='p-1 font-normal'>
         <a
           href='#skills'
-          className='flex items-center'>
+          className='flex items-center text-gray-700 dark:text-gray-500 '>
           Skils
         </a>
       </Typography>
@@ -63,7 +63,7 @@ const NavbarComponent = () => {
         className='p-1 font-normal'>
         <a
           href='#education'
-          className='flex items-center'>
+          className='flex items-center text-gray-700 dark:text-gray-500 '>
           Education
         </a>
       </Typography>
@@ -74,7 +74,7 @@ const NavbarComponent = () => {
         className='p-1 font-normal'>
         <a
           href='#projects'
-          className='flex items-center'>
+          className='flex items-center text-gray-700 dark:text-gray-500 '>
           Projects
         </a>
       </Typography>
@@ -96,7 +96,7 @@ const NavbarComponent = () => {
 
   return (
     <Headroom>
-      <Navbar className='sticky top z-10  rounded-none py-2 px-4 lg:px-8 lg:py-4 mx-auto'>
+      <Navbar className='sticky dark:bg-blue-gray-900/10 border-0  top z-10  rounded-none py-2 px-4 lg:px-8 lg:py-4 mx-auto'>
         <div className='flex items-center justify-between text-blue-gray-900'>
           <Typography
             as='a'
