@@ -16,7 +16,9 @@ export default function ProjectsSection() {
   // animation duration
   let durationtime = 0.3;
   return (
-    <section className='pb-28'>
+    <section
+      className='pb-28 '
+      id='projects'>
       <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>
         Projects
       </h2>

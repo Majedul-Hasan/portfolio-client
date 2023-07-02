@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 export default function SkillSection() {
   let delay = 0.2;
   return (
-    <section className='pb-20 max-w-xl break-words'>
+    <section
+      className='pb-20 max-w-xl break-words'
+      id='skills'>
       <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>
         Skills
       </h2>

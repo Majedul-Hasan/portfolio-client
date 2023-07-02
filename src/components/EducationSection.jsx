@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 
 export default function EducationSection() {
   return (
-    <section className='pb-24 max-w-xl break-words'>
+    <section
+      className='pb-24 max-w-xl break-words'
+      id='education'>
       <h2 className='myfont-fraunces text-3xl sm:text-4xl font-extrabold underline-offset-8 pb-8'>
         Education
       </h2>

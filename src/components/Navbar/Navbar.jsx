@@ -40,9 +40,9 @@ const NavbarComponent = () => {
         color='blue-gray'
         className='p-1 font-normal'>
         <a
-          href='#'
+          href='#intro'
           className='flex items-center'>
-          Pages
+          About
         </a>
       </Typography>
       <Typography
@@ -51,9 +51,9 @@ const NavbarComponent = () => {
         color='blue-gray'
         className='p-1 font-normal'>
         <a
-          href='#'
+          href='#skills'
           className='flex items-center'>
-          Account
+          Skils
         </a>
       </Typography>
       <Typography
@@ -62,9 +62,9 @@ const NavbarComponent = () => {
         color='blue-gray'
         className='p-1 font-normal'>
         <a
-          href='#'
+          href='#education'
           className='flex items-center'>
-          Blocks
+          Education
         </a>
       </Typography>
       <Typography
@@ -73,9 +73,9 @@ const NavbarComponent = () => {
         color='blue-gray'
         className='p-1 font-normal'>
         <a
-          href='#'
+          href='#projects'
           className='flex items-center'>
-          Docs
+          Projects
         </a>
       </Typography>
       <Typography
