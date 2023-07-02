@@ -1,10 +1,9 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import LaunchIcon from '@mui/icons-material/Launch';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { useRef, useEffect, useState } from 'react';
 
-export default function Projectssection() {
+export default function ProjectsSection() {
   const [width, setwidth] = useState(0);
   const carousel = useRef();
 
@@ -146,7 +145,7 @@ const projects = [
     githubServerLink: 'https://github.com/Majedul-Hasan/summer-camp-server',
   },
   {
-    _id: 2,
+    _id: 3,
     title: 'crown-clothing',
     type: 'e-commerce website',
     description:
