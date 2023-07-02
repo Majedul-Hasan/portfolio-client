@@ -4,6 +4,7 @@ import './App.css';
 import { Button } from '@material-tailwind/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleTheme } from './features/theme/themeSlice';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   const { theme } = useSelector((state) => state.theme);
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <div className={theme}>
-      {' '}
+      <Navbar />
+
       <Button
         onClick={themeChange}
         className='dark:bg-light-green-600'>
