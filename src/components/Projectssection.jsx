@@ -101,6 +101,31 @@ export default function ProjectsSection() {
 const projects = [
   {
     _id: 1,
+    title: 'Pen down blog',
+    type: 'Blog Application',
+    description:
+      'multi-user blog application using the MERN stack and React.js. Redux Toolkit. The project included features like user account creation, blog post creation, commenting, and social interactions',
+    tech: [
+      'React',
+      'React-router',
+      'nodeJs',
+      'express',
+      'mongoose',
+      'multer',
+      'redux',
+      'yup',
+      'styled-components',
+      'fetch',
+      'axios',
+      'formik',
+    ],
+    livelink: 'https://mern-blog-frontend.netlify.app/',
+    githubClientLink: 'https://github.com/Majedul-Hasan/mern_blog_fronend',
+    githubServerLink:
+      'https://github.com/Majedul-Hasan/BlogApplication-backend',
+  },
+  {
+    _id: 1,
     title: 'ProShop',
     type: 'e-commerce website',
     description:
