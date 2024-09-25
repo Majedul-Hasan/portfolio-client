@@ -1,0 +1,57 @@
+
+ .techRepeater .sectionTitle {
+	 font-size: 36px;
+	 color: #000;
+	 font-weight: 700;
+	 line-height: 1.2;
+}
+ @media (min-width: 992px) {
+	 .techRepeater .sectionTitle {
+		 font-size: 48px;
+	}
+}
+ .techRepeater .techTabInner {
+	 border: 1px solid #d5d5d5;
+	 border-radius: 20px;
+	 overflow: hidden;
+}
+ .techRepeater .nav-pills-custom {
+	 margin: 0;
+	 position: relative;
+}
+ .techRepeater .nav-pills-custom .stack-item {
+	 cursor: pointer;
+	 display: flex;
+	 align-items: center;
+	 /* padding: 25px 35px; */
+	 transition: all 0.3s ease;
+	 color: #000;
+}
+ .techRepeater .nav-pills-custom .stack-item.active {
+	 color: #3dc4e6;
+	 background-color: #f4fdff;
+}
+ .techRepeater .nav-pills-custom .stack-item img {
+	 position: relative;
+	 margin-right: 30px;
+	 width: 30px;
+}
+ .techRepeater .nav-pills-custom .stack-item:hover {
+	 background-color: #f4fdff;
+}
+ .techRepeater .nav-pills-custom .stack-item:hover .textOuter {
+	 color: #3dc4e6;
+}
+ .techRepeater .nav-tabs-custom-inner {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-around;
+	 border: 0;
+	 border-bottom: 1px solid #f4f4f4;
+	 margin-bottom: 40px;
+	 width: 100%;
+}
+ .techRepeater .cursor-poiter {
+	 cursor: pointer;
+}
+ 

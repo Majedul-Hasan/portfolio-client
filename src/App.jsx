@@ -6,6 +6,7 @@ import ProjectsSection from './components/ProjectsSection';
 import SkillSection from './components/SkillSection';
 import EducationSection from './components/EducationSection';
 import Footer from './components/Footer';
+import Technologies from './components/Technologies';
 
 function App() {
   const { theme } = useSelector((state) => state.theme);
@@ -17,6 +18,7 @@ function App() {
         <div className=' text-black dark:text-white px-5  max-w-screen-2xl mx-auto '>
           <IntroCard />
           <ProjectsSection />
+          <Technologies />
 
           <SkillSection />
           <EducationSection />
