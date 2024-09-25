@@ -1,4 +1,5 @@
 import LeftNavs from './LeftNavs';
+import RightStackTechs from './RightStackTechs';
 
 const TechTabCustomWrapperLg = ({
   stackTech,
@@ -7,20 +8,19 @@ const TechTabCustomWrapperLg = ({
   setStackTitle,
 }) => {
   return (
-    <div className='techTabCustomWrapper d-none d-lg-block'>
-      <div className='techTabInner d-flex align-items-start'>
-        setStackTech
+    <div className='techTabCustomWrapper hidden lg:block'>
+      <div className='techTabInner flex items-start align-items-start'>
         <LeftNavs
           stackTitle={stackTitle}
           setStackTitle={setStackTitle}
           setStackTech={setStackTech}
         />
-        {/*  <RightStackTechs
+        <RightStackTechs
           stackTitle={stackTitle}
           setStackTitle={setStackTitle}
           stackTech={stackTech}
           setStackTech={setStackTech}
-        /> */}
+        />
       </div>
     </div>
   );
