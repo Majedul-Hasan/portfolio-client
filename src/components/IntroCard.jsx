@@ -51,12 +51,27 @@ const IntroCard = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, type: 'spring', duration: 0.6 }}
         viewport={{ once: true }}>
-        Hi, I'm a web developer from Bangladesh, specializing in frontend
-        development. I started learning about the web during the lock down as a
-        hobby to know how things work in the internet. With time now I have
-        started enjoying to build user friendly websites that are aesthetically
-        pleasing. I am looking forward to persue my career in software
-        development.
+        I’m a web developer from Bangladesh, specializing in both frontend and
+        backend development. My journey began in 2021 where I transitioned from
+        a hobbyist to a full-fledged developer after attending an international
+        JavaScript workshop and mastering React through professional courses and
+        books.
+        <br />
+        <br />
+        Since then, I’ve gained significant expertise in MERN stack development
+        (MongoDB, Express, React, Node.js) and worked extensively with both SQL
+        (MySQL) and NoSQL (MongoDB) databases. I’ve taken various courses
+        including web development from Programming Hero and Learn with Sumit
+        (LWS) in my native language where I developed skills in NodeJS, React,
+        NextJS, Redux and more about react ecosystem. Also I have skilled on
+        templating engines like EJS, Pug, and Handlebars. I’ve also worked with
+        Prisma, Mongoose, and Sequelize to streamline database management.
+        <br />
+        <br />I am currently working towards becoming a microservices developer
+        using Node.js, with a focus on cloud-native technologies. To achieve
+        this, I have been studying on Docker, Kubernetes, AWS, and CI/CD
+        pipelines to enhance my understanding of scalable and containerized
+        applications.
       </motion.p>
 
       <ul className='flex flex-wrap gap-1.5 py-4'>
