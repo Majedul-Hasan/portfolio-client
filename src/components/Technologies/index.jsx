@@ -1,4 +1,3 @@
-import React from 'react';
 import SectionContent from './SectionContent';
 import './Technologies.style.css';
 
@@ -15,8 +14,6 @@ const Technologies = () => {
           <SectionContent />
         </div>
       </section>
-
-      <section className='techRepeater nitro-offscreen'></section>
     </>
   );
 };
